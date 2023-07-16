@@ -1,0 +1,3698 @@
+{
+  "intents": [
+    {
+      "intent": "GetAdditionalDetails",
+      "examples": [
+        {
+          "text": "brussel sprouts"
+        },
+        {
+          "text": "chocolate"
+        },
+        {
+          "text": "duck"
+        },
+        {
+          "text": "high protein"
+        },
+        {
+          "text": "I want something with meat"
+        },
+        {
+          "text": "I would like a recipe that uses chicken"
+        },
+        {
+          "text": "I would like something with"
+        },
+        {
+          "text": "I would like something with nuts"
+        },
+        {
+          "text": "I would like to use bacon"
+        },
+        {
+          "text": "low carb"
+        },
+        {
+          "text": "pork"
+        },
+        {
+          "text": "salmon"
+        },
+        {
+          "text": "Sausage"
+        },
+        {
+          "text": "spinach"
+        },
+        {
+          "text": "steak"
+        },
+        {
+          "text": "tuna"
+        },
+        {
+          "text": "use these ingredients"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "getAllergies",
+      "examples": [
+        {
+          "text": "I am allergic to shellfish",
+          "mentions": [
+            {
+              "entity": "fish",
+              "location": [
+                17,
+                26
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I am gluten free",
+          "mentions": [
+            {
+              "entity": "gluten-free",
+              "location": [
+                5,
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I am kosher",
+          "mentions": [
+            {
+              "entity": "kosher",
+              "location": [
+                5,
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I am lactose intolerant",
+          "mentions": [
+            {
+              "entity": "lactose-intolerant",
+              "location": [
+                5,
+                23
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I am nut free",
+          "mentions": [
+            {
+              "entity": "nuts",
+              "location": [
+                5,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I cannot eat berries"
+        },
+        {
+          "text": "I cannot eat nuts"
+        },
+        {
+          "text": "I cannot eat peaches"
+        },
+        {
+          "text": "I cannot have dairy"
+        },
+        {
+          "text": "I do not eat meat"
+        },
+        {
+          "text": "I do not like fish",
+          "mentions": [
+            {
+              "entity": "fish",
+              "location": [
+                14,
+                18
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I have a dairy allergy",
+          "mentions": [
+            {
+              "entity": "lactose-intolerant",
+              "location": [
+                9,
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "text": "I need high protein"
+        },
+        {
+          "text": "I need something with low calories"
+        },
+        {
+          "text": "I will have an allergic reaction to nuts",
+          "mentions": [
+            {
+              "entity": "nuts",
+              "location": [
+                36,
+                40
+              ]
+            }
+          ]
+        },
+        {
+          "text": "no animal based products",
+          "mentions": [
+            {
+              "entity": "vegan",
+              "location": [
+                3,
+                24
+              ]
+            }
+          ]
+        },
+        {
+          "text": "nuts"
+        },
+        {
+          "text": "peanut allergy"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "no",
+      "examples": [
+        {
+          "text": "no"
+        },
+        {
+          "text": "no holiday/season/calendar event"
+        },
+        {
+          "text": "no holiday/season/calendar event "
+        },
+        {
+          "text": "none"
+        },
+        {
+          "text": "no preference"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "cocktail_type",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "bloody mary",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cosmo",
+          "synonyms": [
+            "cosmopolitan"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Daiquiri",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dark 'n' stormy",
+          "synonyms": [
+            "dark and stormy",
+            "dark n stormy"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dry Martini",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "espresso martini",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "irish coffee",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "long island ice tea",
+          "synonyms": [
+            "lit"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "mai tai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Manhattan",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Margarita",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "martini",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mimosa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mojito",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mule",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Negroni",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "old fashioned",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "paloma",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pina colada",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "punch",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sidecar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "spritz",
+          "synonyms": [
+            "aperol spritz"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Whiskey Sour",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "cuisine",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "american",
+          "synonyms": [
+            "bar food"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "asian",
+          "synonyms": [
+            "asian fusion"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "chinese",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "french",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "indian",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "italian",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "japanese",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "korean",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "latin-american",
+          "synonyms": [
+            "latin",
+            "latin american"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "mediterranean",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mexican",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "southern-united-states",
+          "synonyms": [
+            "barbeque",
+            "bbq",
+            "southern"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "spanish",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "thai",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "fish",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "fish",
+          "synonyms": [
+            "bass",
+            "cat fish",
+            "cod",
+            "salmon",
+            "swordfish",
+            "tuna"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "shellfish",
+          "synonyms": [
+            "abalone",
+            "crab ",
+            "lobster",
+            "mussels",
+            "octopus",
+            "oyster",
+            "prawns",
+            "scallops",
+            "shrimp",
+            "snail",
+            "squid"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    },
+    {
+      "entity": "fruit",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "apples",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "apricots",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "bananas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "berries",
+          "synonyms": [
+            "blackberries",
+            "blueberries",
+            "raspberries",
+            "strawberries"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cherries",
+          "synonyms": [
+            "cherry"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "citrus",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "grapes",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "kiwifruit",
+          "synonyms": [
+            "kiwis"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "lemons",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "mango",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "oranges",
+          "synonyms": [
+            "clementine",
+            "tangerine"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "peaches",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pears",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "plums",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "gluten-free",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "gluten",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "gluten-free",
+          "synonyms": [
+            "gluten",
+            "wheat"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "holiday_seasonal",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "barbeque",
+          "synonyms": [
+            "bbq"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "birthday",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "chinese-new-year",
+          "synonyms": [
+            "chinese new year"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "christmas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "easter",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "fall",
+          "synonyms": [
+            "autumn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "halloween",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "hanukkah",
+          "synonyms": [
+            "chanukah"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "independence-day",
+          "synonyms": [
+            "4th of july"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "labor-day",
+          "synonyms": [
+            "labor day"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "memorial-day",
+          "synonyms": [
+            "memorial day"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "new-years",
+          "synonyms": [
+            "new years",
+            "new years eve"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "passover",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ramadan",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "rosh-ashana",
+          "synonyms": [
+            "rosh ashana"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "spring",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "st-patricks-day",
+          "synonyms": [
+            "leprechaun day",
+            "st. patricks day"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "summer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "superbowl",
+          "synonyms": [
+            "super bowl"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "thanksgiving",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "valentines-day",
+          "synonyms": [
+            "valentines day"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "winter",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "kosher",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "kosher",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "lactose-intolerant",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "dairy-free",
+          "synonyms": [
+            "dairy",
+            "dairy sensitive",
+            "milk",
+            "no cheese",
+            "no milk",
+            "no sour cream"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "lactose",
+          "synonyms": [
+            "lactose intolerant",
+            "lactose sensitive"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "liquors",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "bourbon",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "gin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "rum",
+          "synonyms": [
+            "bacardi",
+            "captain morgan"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tequila",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "vodka",
+          "synonyms": [
+            "kettle one",
+            "smirnoff",
+            "svedka",
+            "titos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "whiskey",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "No_holiday_seasonal",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No holiday/season/calendar event",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "nutritional_restriction",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "high_protein",
+          "synonyms": [
+            "a lot of protein",
+            "high protein"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "low_cal",
+          "synonyms": [
+            "caloric deficit",
+            "limited calories",
+            "low calories",
+            "no calories"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "low_carb",
+          "synonyms": [
+            "keto",
+            "limited carbs",
+            "low carbohydrates",
+            "no carbs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "low_fat",
+          "synonyms": [
+            "limited fat",
+            "low fat",
+            "low saturated fat",
+            "no fat"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "low_sodium",
+          "synonyms": [
+            "limited salt",
+            "limited sodium",
+            "low salt",
+            "low sodium",
+            "no salt",
+            "no sodium"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "low_sugar",
+          "synonyms": [
+            "limited sugar",
+            "low sugar",
+            "no sugar"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "nuts",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "nuts",
+          "synonyms": [
+            "cashews",
+            "nut",
+            "nut free",
+            "nuts",
+            "peanut",
+            "peanut butter",
+            "peanuts",
+            "pecans",
+            "tree nuts"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "timelimit",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "15-minutes-or-less",
+          "synonyms": [
+            "10 mins",
+            "10 minutes",
+            "15 mins",
+            "15 minutes",
+            "5 mins",
+            "5 minutes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "30-minutes-or-less",
+          "synonyms": [
+            "20 mins",
+            "20 minutes",
+            "25 mins",
+            "25 minutes",
+            "30 mins",
+            "30 minutes",
+            "half an hour"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "4-hours-or-less",
+          "synonyms": [
+            "1-4 hours"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "60-minutes-or-less",
+          "synonyms": [
+            "1 hour",
+            "40 mins",
+            "40 minutes",
+            "45 mins",
+            "45 minutes",
+            "50 mins",
+            "50 minutes",
+            "55 mins",
+            "55 minutes",
+            "60 mins",
+            "60 minutes",
+            "an hour"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "type",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "beverage",
+          "synonyms": [
+            "non-alcoholic beverage"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "breakfast",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cocktail",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dessert",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dinner",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "lunch",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "vegan",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "animal based products",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "animal products",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "vegan",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "vegetarian",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "vegetarian",
+          "synonyms": [
+            "no meat",
+            "plant based"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "yes_holiday_seasonal",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://us-east.functions.appdomain.cloud/api/v1/web/3e605800-a4ed-44c1-b038-672c1ce7c9cb/default/get_recipe.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_9_1680469124912",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_1_1680646553811",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1680646553814",
+      "previous_sibling": "handler_5_1680646553814"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1680648952804",
+      "context": {
+        "fish": "@fish"
+      },
+      "conditions": "@fish",
+      "event_name": "input",
+      "dialog_node": "handler_10_1680648952807"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_1_1680738465165",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1680738465167",
+      "previous_sibling": "handler_6_1680738465167"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1680738498197",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1680738498201",
+      "previous_sibling": "handler_6_1680738498201"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1680739422345",
+      "context": {
+        "gluten_free": "@gluten-free"
+      },
+      "conditions": "@gluten-free",
+      "event_name": "input",
+      "dialog_node": "handler_10_1680739422347"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_7_1680739429792",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1680739429819",
+      "previous_sibling": "handler_6_1680739429819"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_8_1680739454390",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1680739454393",
+      "previous_sibling": "handler_9_1680739454393"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_3_1680739461800",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1680739461802",
+      "previous_sibling": "handler_4_1680739461802"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1680739523065",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1680739523067",
+      "previous_sibling": "handler_1_1680739523067"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_2_1680739921786",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1680739921823",
+      "previous_sibling": "handler_6_1680739921823"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1681255742670",
+      "context": {
+        "nutritional_restriction": "@nutritional_restriction"
+      },
+      "conditions": "@nutritional_restriction",
+      "event_name": "input",
+      "dialog_node": "handler_10_1681255742676"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1680735254467",
+      "context": {
+        "holiday_season_calendarEvent": "@No_holiday_seasonal"
+      },
+      "conditions": "@No_holiday_seasonal",
+      "event_name": "input",
+      "dialog_node": "handler_11_1680735254467"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_8_1680646530304",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1680646530307",
+      "previous_sibling": "handler_5_1680646530307"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_8_1680738437150",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1680738437152",
+      "previous_sibling": "handler_9_1680738437152"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1680739437875",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1680739437879",
+      "previous_sibling": "handler_9_1680739437879"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1680739443782",
+      "context": {
+        "lactose_intolerant": "@lactose-intolerant"
+      },
+      "conditions": "@lactose-intolerant",
+      "event_name": "input",
+      "dialog_node": "handler_1_1680739443790"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_4_1680739514569",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1680739514571",
+      "previous_sibling": "handler_3_1680739514571"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1680739523065",
+      "context": {
+        "vegetarian": "@vegetarian"
+      },
+      "conditions": "@vegetarian",
+      "event_name": "input",
+      "dialog_node": "handler_1_1680739523067"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_8_1680812738506",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1680812738510",
+      "previous_sibling": "handler_6_1680812738510"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_10_1680735254467",
+      "event_name": "focus",
+      "dialog_node": "handler_12_1680735254467",
+      "previous_sibling": "handler_11_1680735254467"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_14_1680735594193",
+      "context": {
+        "holiday_seasonalInd": "@yes_holiday_seasonal"
+      },
+      "conditions": "@yes_holiday_seasonal",
+      "event_name": "input",
+      "dialog_node": "handler_15_1680735594193"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_14_1680735594193",
+      "event_name": "focus",
+      "dialog_node": "handler_16_1680735594193",
+      "previous_sibling": "handler_15_1680735594193"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_19_1680736253143",
+      "context": {
+        "holiday_seasonalInd": "@yes_holiday_seasonal"
+      },
+      "conditions": "@yes_holiday_seasonal",
+      "event_name": "input",
+      "dialog_node": "handler_20_1680736253143"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_19_1680736253143",
+      "event_name": "focus",
+      "dialog_node": "handler_21_1680736253143",
+      "previous_sibling": "handler_20_1680736253143"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1680646516964",
+      "context": {
+        "vegan": "@vegan"
+      },
+      "conditions": "@vegan",
+      "event_name": "input",
+      "dialog_node": "handler_2_1680646516966"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1680738444955",
+      "context": {
+        "gluten_free": "@gluten-free"
+      },
+      "conditions": "@gluten-free",
+      "event_name": "input",
+      "dialog_node": "handler_2_1680738444959"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1680738533819",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1680738533856",
+      "previous_sibling": "handler_5_1680738533856"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1680739390968",
+      "context": {
+        "cuisine": "@cuisine"
+      },
+      "conditions": "@cuisine",
+      "event_name": "input",
+      "dialog_node": "handler_2_1680739390972"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_6_1681255742670",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1681255742676",
+      "previous_sibling": "handler_10_1681255742676"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_23_1680736253143",
+      "context": {
+        "holiday_season_calendarEvent_desc": "@holiday_seasonal"
+      },
+      "conditions": "@holiday_seasonal",
+      "event_name": "input",
+      "dialog_node": "handler_24_1680736253143"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_23_1680736253143",
+      "event_name": "focus",
+      "dialog_node": "handler_25_1680736253143",
+      "previous_sibling": "handler_24_1680736253143"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_26_1680736253143",
+      "context": {
+        "holiday_season_calendarEvent": "@No_holiday_seasonal"
+      },
+      "conditions": "@No_holiday_seasonal",
+      "event_name": "input",
+      "dialog_node": "handler_27_1680736253143"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_26_1680736253143",
+      "event_name": "focus",
+      "dialog_node": "handler_28_1680736253143",
+      "previous_sibling": "handler_27_1680736253143"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1680462920771",
+      "context": {
+        "holiday_season_calendarEvent": "@No_holiday_seasonal"
+      },
+      "conditions": "@No_holiday_seasonal",
+      "event_name": "input",
+      "dialog_node": "handler_3_1680462920773"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_3_1680471532574",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1680471532590",
+      "previous_sibling": "handler_7_1680471532590"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_3_1680738853875",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1680738853892",
+      "previous_sibling": "handler_5_1680738853892"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1680739415628",
+      "context": {
+        "fruit": "@fruit"
+      },
+      "conditions": "@fruit",
+      "event_name": "input",
+      "dialog_node": "handler_3_1680739415634"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1680739514569",
+      "context": {
+        "vegan": "@vegan"
+      },
+      "conditions": "@vegan",
+      "event_name": "input",
+      "dialog_node": "handler_3_1680739514571"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1680812648738",
+      "context": {
+        "liquors": "@liquors"
+      },
+      "conditions": "@liquors",
+      "event_name": "input",
+      "dialog_node": "handler_3_1680812648743"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_9_1680463392046",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1680463392064",
+      "previous_sibling": "handler_9_1680463392064"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1680646516964",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1680646516966",
+      "previous_sibling": "handler_2_1680646516966"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_4_1680655576346",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1680655576361",
+      "previous_sibling": "handler_6_1680655576361"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1680738456397",
+      "context": {
+        "fruit": "@fruit"
+      },
+      "conditions": "@fruit",
+      "event_name": "input",
+      "dialog_node": "handler_4_1680738456399"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1680739461800",
+      "context": {
+        "nuts": "@nuts"
+      },
+      "conditions": "@nuts",
+      "event_name": "input",
+      "dialog_node": "handler_4_1680739461802"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_4_1680739481478",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1680739481480",
+      "previous_sibling": "handler_9_1680739481480"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1680739528197",
+      "context": {
+        "yes_holiday_seasonal": "@yes_holiday_seasonal"
+      },
+      "conditions": "@yes_holiday_seasonal",
+      "event_name": "input",
+      "dialog_node": "handler_4_1680739528199"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1680812648738",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1680812648743",
+      "previous_sibling": "handler_3_1680812648743"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1680812657218",
+      "context": {
+        "cocktail_type": "@cocktail_type"
+      },
+      "conditions": "@cocktail_type",
+      "event_name": "input",
+      "dialog_node": "handler_4_1680812657222"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1680646530304",
+      "context": {
+        "vegetarian": "@vegetarian"
+      },
+      "conditions": "@vegetarian",
+      "event_name": "input",
+      "dialog_node": "handler_5_1680646530307"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1680646553811",
+      "context": {
+        "lactose_intolerant": "@lactose-intolerant"
+      },
+      "conditions": "@lactose-intolerant",
+      "event_name": "input",
+      "dialog_node": "handler_5_1680646553814"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1680646570711",
+      "context": {
+        "kosher": "@kosher"
+      },
+      "conditions": "@kosher",
+      "event_name": "input",
+      "dialog_node": "handler_5_1680646570713"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1680738444955",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1680738444959",
+      "previous_sibling": "handler_2_1680738444959"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_3_1680738456397",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1680738456399",
+      "previous_sibling": "handler_4_1680738456399"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1680738533819",
+      "context": {
+        "cuisine": "@cuisine"
+      },
+      "conditions": "@cuisine",
+      "event_name": "input",
+      "dialog_node": "handler_5_1680738533856"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1680738853875",
+      "context": {
+        "meal_bev_type": "@type"
+      },
+      "conditions": "@type",
+      "event_name": "input",
+      "dialog_node": "handler_5_1680738853892"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_7_1680739415628",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1680739415634",
+      "previous_sibling": "handler_3_1680739415634"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1682040020886",
+      "context": {
+        "nutrition_restriction": "@nutritional_restriction"
+      },
+      "conditions": "@nutritional_restriction",
+      "event_name": "input",
+      "dialog_node": "handler_5_1682040020891"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_51_1680737266533",
+      "context": {
+        "time_limit": "@timelimit"
+      },
+      "conditions": "@timelimit",
+      "event_name": "input",
+      "dialog_node": "handler_52_1680737266533"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_51_1680737266533",
+      "event_name": "focus",
+      "dialog_node": "handler_53_1680737266533",
+      "previous_sibling": "handler_52_1680737266533"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_56_1680737286050",
+      "context": {
+        "time_limit": "@timelimit"
+      },
+      "conditions": "@timelimit",
+      "event_name": "input",
+      "dialog_node": "handler_57_1680737286050"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_56_1680737286050",
+      "event_name": "focus",
+      "dialog_node": "handler_58_1680737286050",
+      "previous_sibling": "handler_57_1680737286050"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_8_1680462713128",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1680462713143",
+      "previous_sibling": "handler_8_1680462713143"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1680463068802",
+      "context": {
+        "meal_bev_type": "@type"
+      },
+      "conditions": "@type",
+      "event_name": "input",
+      "dialog_node": "handler_6_1680463068812"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_9_1680469019809",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1680469019826",
+      "previous_sibling": "handler_7_1680469019826"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1680646544668",
+      "context": {
+        "nuts": "@nuts"
+      },
+      "conditions": "@nuts",
+      "event_name": "input",
+      "dialog_node": "handler_6_1680646544669"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_4_1680648952804",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1680648952808",
+      "previous_sibling": "handler_10_1680648952807"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1680655576346",
+      "context": {
+        "holiday_seasonalInd": "@yes_holiday_seasonal"
+      },
+      "conditions": "@yes_holiday_seasonal",
+      "event_name": "input",
+      "dialog_node": "handler_6_1680655576361"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1680738465165",
+      "context": {
+        "kosher": "@kosher"
+      },
+      "conditions": "@kosher",
+      "event_name": "input",
+      "dialog_node": "handler_6_1680738465167"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1680738474540",
+      "context": {
+        "lactose_intolerant": "@lactose-intolerant"
+      },
+      "conditions": "@lactose-intolerant",
+      "event_name": "input",
+      "dialog_node": "handler_6_1680738474541"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1680738498197",
+      "context": {
+        "vegetarian": "@vegetarian"
+      },
+      "conditions": "@vegetarian",
+      "event_name": "input",
+      "dialog_node": "handler_6_1680738498201"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1680739409806",
+      "context": {
+        "fish": "@fish"
+      },
+      "conditions": "@fish",
+      "event_name": "input",
+      "dialog_node": "handler_6_1680739409810"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1680739429792",
+      "context": {
+        "holiday_season_calendarEvent_desc": "@holiday_seasonal"
+      },
+      "conditions": "@holiday_seasonal",
+      "event_name": "input",
+      "dialog_node": "handler_6_1680739429819"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1680739921786",
+      "context": {
+        "meal_bev_type": "@type"
+      },
+      "conditions": "@type",
+      "event_name": "input",
+      "dialog_node": "handler_6_1680739921823"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1680812738506",
+      "context": {
+        "meal_bev_type": "@type"
+      },
+      "conditions": "@type",
+      "event_name": "input",
+      "dialog_node": "handler_6_1680812738510"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_7_1682040020886",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1682040020891",
+      "previous_sibling": "handler_5_1682040020891"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_10_1680462920771",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1680462920773",
+      "previous_sibling": "handler_3_1680462920773"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_8_1680463068802",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1680463068812",
+      "previous_sibling": "handler_6_1680463068812"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1680469019809",
+      "context": {
+        "time_limit": "@timelimit"
+      },
+      "conditions": "@timelimit",
+      "event_name": "input",
+      "dialog_node": "handler_7_1680469019826"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1680471532574",
+      "context": {
+        "time_limit": "@timelimit"
+      },
+      "conditions": "@timelimit",
+      "event_name": "input",
+      "dialog_node": "handler_7_1680471532590"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1680646507862",
+      "context": {
+        "fruit": "@fruit"
+      },
+      "conditions": "@fruit",
+      "event_name": "input",
+      "dialog_node": "handler_7_1680646507864"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_1_1680738474540",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1680738474541",
+      "previous_sibling": "handler_6_1680738474541"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_8_1680738486131",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1680738486133",
+      "previous_sibling": "handler_9_1680738486133"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_3_1680739390968",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1680739390972",
+      "previous_sibling": "handler_2_1680739390972"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_2_1680739528197",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1680739528199",
+      "previous_sibling": "handler_4_1680739528199"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_3_1680462587801",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1680462587822",
+      "previous_sibling": "handler_9_1680462587822"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1680462713128",
+      "context": {
+        "holiday_season_calendarEvent_desc": "@holiday_seasonal"
+      },
+      "conditions": "@holiday_seasonal",
+      "event_name": "input",
+      "dialog_node": "handler_8_1680462713143"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_9_1680646544668",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1680646544669",
+      "previous_sibling": "handler_6_1680646544669"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1680735254467",
+      "context": {
+        "holiday_season_calendarEvent_desc": "@holiday_seasonal"
+      },
+      "conditions": "@holiday_seasonal",
+      "event_name": "input",
+      "dialog_node": "handler_8_1680735254467"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_6_1680739402879",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1680739402882",
+      "previous_sibling": "handler_9_1680739402882"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_4_1680812657218",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1680812657222",
+      "previous_sibling": "handler_4_1680812657222"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1680462587801",
+      "context": {
+        "gluten_free": "@gluten-free"
+      },
+      "conditions": "@gluten-free",
+      "event_name": "input",
+      "dialog_node": "handler_9_1680462587822"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1680463392046",
+      "context": {
+        "nuts": "@nuts"
+      },
+      "conditions": "@nuts",
+      "event_name": "input",
+      "dialog_node": "handler_9_1680463392064"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_2_1680646507862",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1680646507864",
+      "previous_sibling": "handler_7_1680646507864"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_3_1680646570711",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1680646570713",
+      "previous_sibling": "handler_5_1680646570713"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_7_1680735254467",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1680735254467",
+      "previous_sibling": "handler_8_1680735254467"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1680738437150",
+      "context": {
+        "fish": "@fish"
+      },
+      "conditions": "@fish",
+      "event_name": "input",
+      "dialog_node": "handler_9_1680738437152"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1680738486131",
+      "context": {
+        "vegan": "@vegan"
+      },
+      "conditions": "@vegan",
+      "event_name": "input",
+      "dialog_node": "handler_9_1680738486133"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1680739402879",
+      "context": {
+        "cocktail_type": "@cocktail_type"
+      },
+      "conditions": "@cocktail_type",
+      "event_name": "input",
+      "dialog_node": "handler_9_1680739402882"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1680739409806",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1680739409810",
+      "previous_sibling": "handler_6_1680739409810"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_5_1680739422345",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1680739422347",
+      "previous_sibling": "handler_10_1680739422347"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1680739437875",
+      "context": {
+        "kosher": "@kosher"
+      },
+      "conditions": "@kosher",
+      "event_name": "input",
+      "dialog_node": "handler_9_1680739437879"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "slot_2_1680739443782",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1680739443790",
+      "previous_sibling": "handler_1_1680739443790"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1680739454390",
+      "context": {
+        "liquors": "@liquors"
+      },
+      "conditions": "@liquors",
+      "event_name": "input",
+      "dialog_node": "handler_9_1680739454393"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1680739481478",
+      "context": {
+        "meal_bev_type": "@type"
+      },
+      "conditions": "@type",
+      "event_name": "input",
+      "dialog_node": "handler_9_1680739481480"
+    },
+    {
+      "type": "frame",
+      "title": "Cocktail Holiday / Seasonal / Calendar Event (yes/no)",
+      "output": {
+        "generic": [
+          {
+            "title": "Are you looking for a recipe for a specific holiday, season, or calendar event? ",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "no holiday/season/calendar event "
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1680365562379",
+      "conditions": "#no",
+      "dialog_node": "node_10_1680461288379",
+      "previous_sibling": "node_8_1680650614359"
+    },
+    {
+      "type": "frame",
+      "title": "Gathering Results Text",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1680469124912"
+      },
+      "conditions": "@timelimit || #GetAdditionalDetails",
+      "dialog_node": "node_10_1680467602102",
+      "previous_sibling": "node_17_1680736253141"
+    },
+    {
+      "type": "frame",
+      "title": "Dinner / Lunch Additional description",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you have any specific ingredients you would like to use or a brief description of what you are looking for? (i.e type of meat, fish, vegetable, etc.)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1680735227920",
+      "context": {},
+      "conditions": "@timelimit || #no",
+      "dialog_node": "node_1_1680467506613",
+      "previous_sibling": "node_6_1680735254464"
+    },
+    {
+      "type": "frame",
+      "title": "Dinner / Lunch - Holiday / Seasonal / Calendar Event (yes/no)",
+      "output": {
+        "generic": [
+          {
+            "title": "Are you looking for a recipe for a specific holiday, season, or calendar event? ",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "no holiday/season/calendar event "
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1680363600548",
+      "conditions": "@cuisine || #no",
+      "dialog_node": "node_1_1680735227920"
+    },
+    {
+      "type": "frame",
+      "title": "Dinner / Lunch - Holiday / Seasonal (description)",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please elaborate which season, holiday or calendar event you are looking to prepare a recipe for."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1680735227920",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1680735254464"
+      },
+      "conditions": "@yes_holiday_seasonal:(Yes)",
+      "dialog_node": "node_13_1680735594191",
+      "previous_sibling": "slot_9_1680738533819"
+    },
+    {
+      "type": "frame",
+      "title": "Break / Dessert - Holiday / Seasonal / Calendar Event (yes/no)",
+      "output": {
+        "generic": [
+          {
+            "title": "Are you looking for a recipe for a specific holiday, season, or calendar event? ",
+            "options": [
+              {
+                "label": "Yes",
+                "value": {
+                  "input": {
+                    "text": "yes"
+                  }
+                }
+              },
+              {
+                "label": "No",
+                "value": {
+                  "input": {
+                    "text": "no holiday/season/calendar event "
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@type:breakfast || @type:dessert",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_17_1680736253141",
+      "previous_sibling": "node_8_1680361646618"
+    },
+    {
+      "type": "frame",
+      "title": "Holiday / Seasonal (description) - copy 1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please elaborate which season, holiday or calendar event you are looking to prepare a recipe for."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1680736253141",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_22_1680736253143"
+      },
+      "conditions": "@yes_holiday_seasonal:(Yes)",
+      "dialog_node": "node_18_1680736253143",
+      "previous_sibling": "slot_2_1680739921786"
+    },
+    {
+      "type": "standard",
+      "title": "Save Description",
+      "output": {},
+      "parent": "node_1_1680467506613",
+      "context": {
+        "misc_description": "<? input.text ?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1680467602102"
+      },
+      "conditions": "#GetAdditionalDetails",
+      "dialog_node": "node_2_1680467506614",
+      "previous_sibling": "slot_3_1680471532574"
+    },
+    {
+      "type": "frame",
+      "title": "Breakfast / Dessert - Time Limit",
+      "output": {
+        "generic": [
+          {
+            "title": "How long would you like to spend preparing the recipe?",
+            "options": [
+              {
+                "label": "15 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "15-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "30 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "30-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "60 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "60-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "4 hours or less",
+                "value": {
+                  "input": {
+                    "text": "4-hours-or-less"
+                  }
+                }
+              },
+              {
+                "label": "No preference on time",
+                "value": {
+                  "input": {
+                    "text": "no preference on time"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_17_1680736253141",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_49_1680737266530"
+      },
+      "conditions": "@No_holiday_seasonal || @holiday_seasonal",
+      "dialog_node": "node_22_1680736253143",
+      "previous_sibling": "node_18_1680736253143"
+    },
+    {
+      "type": "frame",
+      "title": "Dinner / Lunch - Cuisine",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you have a preference in cuisine?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1680361646618",
+      "conditions": "@type:dinner || @type:lunch",
+      "dialog_node": "node_4_1680363600548",
+      "previous_sibling": "slot_10_1680738498197"
+    },
+    {
+      "type": "frame",
+      "title": "Cocktail - Liquor / Cocktail Type",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please provide a choice of liquor or type of cocktail you would prefer."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1680361646618",
+      "conditions": "@type:cocktail",
+      "dialog_node": "node_4_1680365562379",
+      "previous_sibling": "node_4_1680363600548"
+    },
+    {
+      "type": "frame",
+      "title": "Non-Alcoholic bev Time Limit",
+      "output": {
+        "generic": [
+          {
+            "title": "How long would you like to spend preparing the recipe?",
+            "options": [
+              {
+                "label": "15 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "15-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "30 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "30-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "60 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "60-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "4 hours or less",
+                "value": {
+                  "input": {
+                    "text": "4-hours-or-less"
+                  }
+                }
+              },
+              {
+                "label": "No preference on time",
+                "value": {
+                  "input": {
+                    "text": "no preference on time"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1680361646618",
+      "conditions": "@type:beverage",
+      "dialog_node": "node_42_1680737026784",
+      "previous_sibling": "node_4_1680365562379"
+    },
+    {
+      "type": "frame",
+      "title": "Breakfast / Dessert Additional description",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you have any specific ingredients you would like to use or a brief description of what you are looking for?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_17_1680736253141",
+      "context": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_50_1680737266533"
+      },
+      "conditions": "@timelimit || #no",
+      "dialog_node": "node_49_1680737266530",
+      "previous_sibling": "node_22_1680736253143"
+    },
+    {
+      "type": "standard",
+      "title": "Save Description",
+      "output": {},
+      "parent": "node_49_1680737266530",
+      "context": {
+        "misc_description": "<? input.text ?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1680467602102"
+      },
+      "conditions": "#GetAdditionalDetails || #no",
+      "dialog_node": "node_50_1680737266533",
+      "previous_sibling": "slot_51_1680737266533"
+    },
+    {
+      "type": "frame",
+      "title": "Non-alcoholic beverage additional description",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please let us know if you have a preference on the type of non-alcoholic beverage."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_42_1680737026784",
+      "context": {},
+      "conditions": "@timelimit || #no",
+      "dialog_node": "node_54_1680737286047",
+      "previous_sibling": "slot_8_1680812738506"
+    },
+    {
+      "type": "standard",
+      "title": "Save Description",
+      "output": {},
+      "parent": "node_54_1680737286047",
+      "context": {
+        "misc_description": "<? input.text ?>"
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1680467602102"
+      },
+      "conditions": "#GetAdditionalDetails",
+      "dialog_node": "node_55_1680737286050",
+      "previous_sibling": "slot_56_1680737286050"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We will take that into consideration. Let's get started!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1680361646618"
+      },
+      "conditions": "#getAllergies || @nutritional_restriction",
+      "dialog_node": "node_6_1680461214466",
+      "previous_sibling": "node_6_1680649924077"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Great, let's get started!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1680361646618"
+      },
+      "conditions": "#no",
+      "dialog_node": "node_6_1680649924077"
+    },
+    {
+      "type": "frame",
+      "title": "Dinner / Lunch Time Limit",
+      "output": {
+        "generic": [
+          {
+            "title": "How long would you like to spend preparing the recipe?",
+            "options": [
+              {
+                "label": "15 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "15-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "30 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "30-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "60 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "60-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "4 hours or less",
+                "value": {
+                  "input": {
+                    "text": "4-hours-or-less"
+                  }
+                }
+              },
+              {
+                "label": "No preference on time",
+                "value": {
+                  "input": {
+                    "text": "no preference on time"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1680735227920",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1680467506613"
+      },
+      "conditions": "@No_holiday_seasonal || @holiday_seasonal",
+      "dialog_node": "node_6_1680735254464",
+      "previous_sibling": "node_13_1680735594191"
+    },
+    {
+      "type": "frame",
+      "title": "Meal / Drink Type",
+      "output": {
+        "generic": [
+          {
+            "title": "Next, please let us know what meal or type of beverage you would like to prepare.",
+            "options": [
+              {
+                "label": "Cocktail",
+                "value": {
+                  "input": {
+                    "text": "cocktail"
+                  }
+                }
+              },
+              {
+                "label": "Non-alcoholic beverage",
+                "value": {
+                  "input": {
+                    "text": "non-alcoholic beverage"
+                  }
+                }
+              },
+              {
+                "label": "Breakfast",
+                "value": {
+                  "input": {
+                    "text": "breakfast"
+                  }
+                }
+              },
+              {
+                "label": "Lunch",
+                "value": {
+                  "input": {
+                    "text": "lunch"
+                  }
+                }
+              },
+              {
+                "label": "Dinner",
+                "value": {
+                  "input": {
+                    "text": "dinner"
+                  }
+                }
+              },
+              {
+                "label": "Dessert",
+                "value": {
+                  "input": {
+                    "text": "dessert"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#getAllergies",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1680361646618",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "Save Liquor Type",
+      "parent": "node_4_1680365562379",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1680467602102"
+      },
+      "conditions": "@liquors || @cocktail_type",
+      "dialog_node": "node_8_1680650614359",
+      "previous_sibling": "slot_3_1680738853875"
+    },
+    {
+      "type": "frame",
+      "title": "Cocktail Time Limit",
+      "output": {
+        "generic": [
+          {
+            "title": "How long would you like to spend preparing the recipe?",
+            "options": [
+              {
+                "label": "15 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "15-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "30 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "30-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "60 minutes or less",
+                "value": {
+                  "input": {
+                    "text": "60-minutes-or-less"
+                  }
+                }
+              },
+              {
+                "label": "4 hours or less",
+                "value": {
+                  "input": {
+                    "text": "4-hours-or-less"
+                  }
+                }
+              },
+              {
+                "label": "No preference on time",
+                "value": {
+                  "input": {
+                    "text": "no preference on time"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1680461288379",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_10_1680467602102"
+      },
+      "conditions": "@No_holiday_seasonal || @holiday_seasonal || #no",
+      "dialog_node": "node_9_1680363994492",
+      "previous_sibling": "node_9_1680368950604"
+    },
+    {
+      "type": "frame",
+      "title": "Cocktail Holiday / Seasonal (description)",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please elaborate which season, holiday or calendar event you are looking to prepare a recipe for."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1680461288379",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_9_1680363994492"
+      },
+      "conditions": "@yes_holiday_seasonal:(Yes)",
+      "dialog_node": "node_9_1680368950604"
+    },
+    {
+      "type": "standard",
+      "title": "webhook",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "fish": "$fish",
+            "nuts": "$nuts",
+            "fruit": "$fruit",
+            "vegan": "$vegan",
+            "kosher": "$kosher",
+            "cuisine": "$cuisine",
+            "liquors": "$liquors",
+            "time_limit": "$time_limit",
+            "vegetarian": "$vegetarian",
+            "gluten_free": "$gluten_free",
+            "cocktail_type": "$cocktail_type",
+            "meal_bev_type": "$meal_bev_type",
+            "misc_description": "$misc_description",
+            "lactose_intolerant": "$lactose_intolerant",
+            "yes_holiday_seasonal": "$yes_holiday_seasonal",
+            "nutrition_restriction": "$nutrition_restriction",
+            "holiday_season_calendarEvent_desc": "$holiday_season_calendarEvent_desc"
+          },
+          "result_variable": "webhook_result"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "",
+      "dialog_node": "node_9_1680469124912",
+      "previous_sibling": "node_10_1680467602102"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$webhook_result.sim_score_1"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result.recipe_1"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result.ingr_1"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result.steps_1"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result.sim_score_2"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result.recipe_2"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result.ingr_2"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result.steps_2"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result.sim_score_3"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result.recipe_3"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result.ingr_3"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result.steps_3"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_9_1680469124912",
+      "conditions": "$webhook_result",
+      "dialog_node": "response_1_1680469209054"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please wait a moment as we find a few recipes that match your responses. This may take a few minutes."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1680467602102",
+      "dialog_node": "response_3_1680469038309"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Try running again, we can be slow sometimes :("
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1680469124912",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1680469209726",
+      "previous_sibling": "response_1_1680469209054"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1680363994492",
+      "variable": "$holiday_season_calendarEvent",
+      "dialog_node": "slot_10_1680462920771",
+      "previous_sibling": "slot_8_1680462713128"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1680735254464",
+      "variable": "$holiday_season_calendarEvent",
+      "dialog_node": "slot_10_1680735254467",
+      "previous_sibling": "slot_7_1680735254467"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1680361646618",
+      "variable": "$vegetarian",
+      "dialog_node": "slot_10_1680738498197",
+      "previous_sibling": "slot_8_1680738486131"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1680467602102",
+      "variable": "$fish",
+      "dialog_node": "slot_10_1680739409806",
+      "previous_sibling": "slot_6_1680739402879"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1680461214466",
+      "variable": "$lactose_intolerant",
+      "dialog_node": "slot_1_1680646553811",
+      "previous_sibling": "slot_9_1680646544668"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1680361646618",
+      "variable": "$kosher",
+      "dialog_node": "slot_1_1680738465165",
+      "previous_sibling": "slot_3_1680738456397"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1680361646618",
+      "variable": "$lactose_intolerant",
+      "dialog_node": "slot_1_1680738474540",
+      "previous_sibling": "slot_1_1680738465165"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_13_1680735594191",
+      "variable": "$holiday_seasonalInd",
+      "dialog_node": "slot_14_1680735594193"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_18_1680736253143",
+      "variable": "$holiday_seasonalInd",
+      "dialog_node": "slot_19_1680736253143"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1680461214466",
+      "variable": "$fruit",
+      "dialog_node": "slot_2_1680646507862",
+      "previous_sibling": "slot_3_1680462587801"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1680467602102",
+      "variable": "$lactose_intolerant",
+      "dialog_node": "slot_2_1680739443782",
+      "previous_sibling": "slot_9_1680739437875"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1680467602102",
+      "variable": "$yes_holiday_seasonal",
+      "dialog_node": "slot_2_1680739528197",
+      "previous_sibling": "slot_9_1680739523065"
+    },
+    {
+      "type": "slot",
+      "parent": "node_17_1680736253141",
+      "variable": "$meal_bev_type",
+      "dialog_node": "slot_2_1680739921786"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_22_1680736253143",
+      "variable": "$holiday_season_calendarEvent_desc",
+      "dialog_node": "slot_23_1680736253143"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_22_1680736253143",
+      "variable": "$holiday_season_calendarEvent",
+      "dialog_node": "slot_26_1680736253143",
+      "previous_sibling": "slot_23_1680736253143"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1680461214466",
+      "variable": "$gluten_free",
+      "dialog_node": "slot_3_1680462587801"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1680467506613",
+      "variable": "$time_limit",
+      "dialog_node": "slot_3_1680471532574"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1680461214466",
+      "variable": "$kosher",
+      "dialog_node": "slot_3_1680646570711",
+      "previous_sibling": "slot_1_1680646553811"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1680361646618",
+      "variable": "$fruit",
+      "dialog_node": "slot_3_1680738456397",
+      "previous_sibling": "slot_9_1680738444955"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1680365562379",
+      "variable": "$meal_bev_type",
+      "dialog_node": "slot_3_1680738853875"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1680467602102",
+      "variable": "$cuisine",
+      "dialog_node": "slot_3_1680739390968",
+      "previous_sibling": "slot_9_1680469019809"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1680467602102",
+      "variable": "$nuts",
+      "dialog_node": "slot_3_1680739461800",
+      "previous_sibling": "slot_8_1680739454390"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1680461214466",
+      "variable": "$fish",
+      "dialog_node": "slot_4_1680648952804",
+      "previous_sibling": "slot_3_1680646570711"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1680368950604",
+      "variable": "$holiday_seasonalInd",
+      "dialog_node": "slot_4_1680655576346"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1680467602102",
+      "variable": "$meal_bev_type",
+      "dialog_node": "slot_4_1680739481478",
+      "previous_sibling": "slot_3_1680739461800"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1680467602102",
+      "variable": "$vegan",
+      "dialog_node": "slot_4_1680739514569",
+      "previous_sibling": "slot_4_1680739481478"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1680650614359",
+      "variable": "$cocktail_type",
+      "dialog_node": "slot_4_1680812657218",
+      "previous_sibling": "slot_9_1680812648738"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_49_1680737266530",
+      "variable": "$time_limit",
+      "dialog_node": "slot_51_1680737266533"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1680467602102",
+      "variable": "$gluten_free",
+      "dialog_node": "slot_5_1680739422345",
+      "previous_sibling": "slot_7_1680739415628"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_54_1680737286047",
+      "variable": "$time_limit",
+      "dialog_node": "slot_56_1680737286050"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1680467602102",
+      "variable": "$cocktail_type",
+      "dialog_node": "slot_6_1680739402879",
+      "previous_sibling": "slot_3_1680739390968"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1680461214466",
+      "variable": "$nutritional_restriction",
+      "dialog_node": "slot_6_1681255742670",
+      "previous_sibling": "slot_4_1680648952804"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1680735254464",
+      "variable": "$holiday_season_calendarEvent_desc",
+      "dialog_node": "slot_7_1680735254467"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1680467602102",
+      "variable": "$fruit",
+      "dialog_node": "slot_7_1680739415628",
+      "previous_sibling": "slot_10_1680739409806"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1680467602102",
+      "variable": "$holiday_season_calendarEvent_desc",
+      "dialog_node": "slot_7_1680739429792",
+      "previous_sibling": "slot_5_1680739422345"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1680467602102",
+      "variable": "$nutrition_restriction",
+      "dialog_node": "slot_7_1682040020886",
+      "previous_sibling": "slot_2_1680739528197"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1680363994492",
+      "variable": "$holiday_season_calendarEvent_desc",
+      "dialog_node": "slot_8_1680462713128"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1680363600548",
+      "variable": "$meal_bev_type",
+      "dialog_node": "slot_8_1680463068802",
+      "previous_sibling": "node_1_1680735227920"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1680461214466",
+      "variable": "$vegetarian",
+      "dialog_node": "slot_8_1680646530304",
+      "previous_sibling": "slot_9_1680646516964"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1680361646618",
+      "variable": "$fish",
+      "dialog_node": "slot_8_1680738437150",
+      "previous_sibling": "slot_9_1680463392046"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1680361646618",
+      "variable": "$vegan",
+      "dialog_node": "slot_8_1680738486131",
+      "previous_sibling": "slot_1_1680738474540"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1680467602102",
+      "variable": "$liquors",
+      "dialog_node": "slot_8_1680739454390",
+      "previous_sibling": "slot_2_1680739443782"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_42_1680737026784",
+      "variable": "$meal_bev_type",
+      "dialog_node": "slot_8_1680812738506"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1680361646618",
+      "variable": "$nuts",
+      "dialog_node": "slot_9_1680463392046"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1680467602102",
+      "variable": "$time_limit",
+      "dialog_node": "slot_9_1680469019809",
+      "previous_sibling": "response_3_1680469038309"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1680461214466",
+      "variable": "$vegan",
+      "dialog_node": "slot_9_1680646516964",
+      "previous_sibling": "slot_2_1680646507862"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1680461214466",
+      "variable": "$nuts",
+      "dialog_node": "slot_9_1680646544668",
+      "previous_sibling": "slot_8_1680646530304"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1680361646618",
+      "variable": "$gluten_free",
+      "dialog_node": "slot_9_1680738444955",
+      "previous_sibling": "slot_8_1680738437150"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1680735227920",
+      "variable": "$cuisine",
+      "dialog_node": "slot_9_1680738533819"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1680467602102",
+      "variable": "$kosher",
+      "dialog_node": "slot_9_1680739437875",
+      "previous_sibling": "slot_7_1680739429792"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1680467602102",
+      "variable": "$vegetarian",
+      "dialog_node": "slot_9_1680739523065",
+      "previous_sibling": "slot_4_1680739514569"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1680650614359",
+      "variable": "$liquors",
+      "dialog_node": "slot_9_1680812648738"
+    },
+    {
+      "type": "frame",
+      "title": "Welcome / allergies / dietary restrictions",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. This is the What's the Deal with your Meal chat bot! I am here to help you find a recipe. Before we get started please let me know of any allergies or dietary restrictions so I know what recipes to avoid."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "4-hours-or-less"
+    },
+    {
+      "text": "barbeque"
+    },
+    {
+      "text": "fish"
+    },
+    {
+      "text": "french"
+    },
+    {
+      "text": "Lunch"
+    },
+    {
+      "text": "no holiday/season/calendar event "
+    },
+    {
+      "text": "nuts"
+    },
+    {
+      "text": "st patricks day"
+    },
+    {
+      "text": "Super Bowl"
+    },
+    {
+      "text": "thanksgiving"
+    },
+    {
+      "text": "yes"
+    }
+  ],
+  "learning_opt_out": false,
+  "language": "en",
+  "description": "created for assistant 8e19c59e-4fb2-48b6-addd-d188620dea49",
+  "name": "What's the Deal For Your Meal-dialog"
+}
